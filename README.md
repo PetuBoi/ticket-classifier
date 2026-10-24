@@ -1,5 +1,7 @@
 # IT Ticket Classifier
 
+[![CI](https://github.com/PetuBoi/ticket-classifier/actions/workflows/ci.yml/badge.svg)](https://github.com/PetuBoi/ticket-classifier/actions/workflows/ci.yml)
+
 A small junior IT/DevOps portfolio demo: classify an English IT request as
 `account_access`, `hardware`, `network`, or `software`. Python 3.13, uv,
 scikit-learn, argparse, joblib, pytest, and Ruff; no external services.
@@ -76,7 +78,7 @@ Token permissions are limited to `contents: read`, and checkout does not persist
 credentials. Actions use supported versions:
 [checkout v7](https://github.com/actions/checkout/releases),
 [setup-python v7](https://github.com/actions/setup-python/releases), and
-[setup-uv v10](https://github.com/astral-sh/setup-uv/releases).
+[setup-uv v10.3.2](https://github.com/astral-sh/setup-uv/releases/tag/v10.3.2).
 
 **Locally verified:** locked installation, Ruff lint and formatting, all 37 pytest
 tests, and native CLI training/prediction. Model scores are recorded below.
@@ -93,8 +95,12 @@ Verification used image `ticket-classifier:verify-20261023` and named volume
 `ticket-classifier-verify-20261023`; both remain available locally. All verification
 containers used `--rm` and were removed. No unrelated Docker resources were changed.
 
-**Not yet verified:** the GitHub Actions workflow has not run on GitHub; its first
-hosted run is still required. Nothing has been pushed or published.
+**GitHub Actions verified on 2026-10-24:** [CI run 40112416992](https://github.com/PetuBoi/ticket-classifier/actions/runs/40112416992)
+passed for commit `ec1e848`. All checks completed successfully: locked installation,
+Ruff lint and formatting, pytest, native CLI smoke tests, Docker build, non-root
+volume access, container training, and prediction in a new container with a
+read-only model volume. The source code is published on GitHub; CI does not deploy
+the application or publish a Docker image.
 
 ## Data and evaluation
 
