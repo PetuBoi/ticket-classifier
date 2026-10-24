@@ -1,0 +1,193 @@
+text,category,scenario_id
+I forgot my password and need a reset link,account_access,access_password_reset
+Please help me reset the password for my work account,account_access,access_password_reset
+My old password no longer works and I cannot remember the new one,account_access,access_password_reset
+My account was locked after too many sign in attempts,account_access,access_lockout
+Please unlock my employee account after repeated incorrect passwords,account_access,access_lockout
+The login screen says my account is temporarily locked,account_access,access_lockout
+I replaced my phone and need to register the authenticator again,account_access,access_mfa_phone
+My new mobile device does not have my work authentication codes,account_access,access_mfa_phone
+Can you transfer my two factor authentication to a replacement phone,account_access,access_mfa_phone
+The finance folder says access denied for my user account,account_access,access_finance_folder
+Please grant me permission to read the finance shared directory,account_access,access_finance_folder
+I can reach the file server but my account cannot open the finance folder,account_access,access_finance_folder
+Our new starter needs an employee account before Monday,account_access,access_onboarding
+Please create a login for the person joining our team,account_access,access_onboarding
+A new colleague cannot start because no user account has been created,account_access,access_onboarding
+Please disable the account of an employee who has left,account_access,access_offboarding
+Revoke the departing contractor's sign in access today,account_access,access_offboarding
+An old employee account is still active and needs to be deactivated,account_access,access_offboarding
+My password expired while I was on leave,account_access,access_expired_password
+The login page requires a password change before I can continue,account_access,access_expired_password
+I need help updating an expired corporate password,account_access,access_expired_password
+I need membership in the deployment administrators group,account_access,access_admin_group
+Please assign my account the administrator role for release duties,account_access,access_admin_group
+My user is missing the elevated permissions required for deployments,account_access,access_admin_group
+Please update my login name after my legal name change,account_access,access_rename
+My work account still uses my previous surname,account_access,access_rename
+Can you rename my employee sign in identity,account_access,access_rename
+The single sign on page rejects my account although my password is correct,account_access,access_sso
+I am redirected to an identity provider error when signing in,account_access,access_sso
+Corporate single sign on cannot authenticate my user,account_access,access_sso
+I need delegate access to the team mailbox,account_access,access_shared_mailbox
+Please give my account permission to open our shared support inbox,account_access,access_shared_mailbox
+The team mailbox exists but I am not authorized to read it,account_access,access_shared_mailbox
+My contractor account expired before the project ended,account_access,access_contractor_extension
+Please extend the validity of my temporary user account,account_access,access_contractor_extension
+My contract was renewed but my sign in access has already expired,account_access,access_contractor_extension
+My security key is missing and I cannot complete authentication,account_access,access_security_key
+Please revoke my lost sign in token and register a replacement,account_access,access_security_key
+I lost the physical key used as my second authentication factor,account_access,access_security_key
+Please remove the old recovery email from my account,account_access,access_recovery_email
+Password recovery messages go to an address I no longer own,account_access,access_recovery_email
+I need to change the backup email used to recover my login,account_access,access_recovery_email
+My account is missing the developer portal role,account_access,access_portal_role
+The developer portal opens but says my user is not authorized,account_access,access_portal_role
+Please approve portal access for my engineering account,account_access,access_portal_role
+I keep receiving authentication approval requests that I did not initiate,account_access,access_unexpected_mfa
+Please secure my login because unexpected MFA prompts keep appearing,account_access,access_unexpected_mfa
+Someone may be trying to sign in with my account credentials,account_access,access_unexpected_mfa
+My laptop battery drains within twenty minutes,hardware,hardware_battery
+The notebook shuts down as soon as I unplug its charger,hardware,hardware_battery
+Please replace the laptop battery because it no longer holds a charge,hardware,hardware_battery
+Several keys on my keyboard have stopped responding,hardware,hardware_keyboard
+The space bar is physically stuck on my desk keyboard,hardware,hardware_keyboard
+My keyboard types nothing when I press the left side keys,hardware,hardware_keyboard
+The external monitor has a cracked panel,hardware,hardware_monitor
+My second screen shows permanent vertical colored lines,hardware,hardware_monitor
+Please replace the damaged display on my desk,hardware,hardware_monitor
+The docking station loses power whenever I attach the laptop,hardware,hardware_dock
+My desk dock has a broken connector and needs replacement,hardware,hardware_dock
+The laptop docking unit does not power on with a working adapter,hardware,hardware_dock
+The printer pulls several sheets at once and jams,hardware,hardware_printer_jam
+Paper is stuck inside the office printer rollers,hardware,hardware_printer_jam
+Our printer keeps jamming even with a fresh paper tray,hardware,hardware_printer_jam
+My computer makes a grinding noise from the cooling fan,hardware,hardware_fan
+The laptop fan rattles loudly whenever the machine is on,hardware,hardware_fan
+Please inspect a noisy cooling fan inside my workstation,hardware,hardware_fan
+The desktop does not turn on when I press its power button,hardware,hardware_power
+My workstation has no power light despite a working wall socket,hardware,hardware_power
+The office computer power supply appears to have failed,hardware,hardware_power
+My USB mouse has a broken scroll wheel,hardware,hardware_mouse
+The left button on my mouse no longer clicks,hardware,hardware_mouse
+Please replace my mouse because its cable is physically damaged,hardware,hardware_mouse
+The laptop hinge is broken and the screen will not stay upright,hardware,hardware_hinge
+My notebook casing separates near the display hinge,hardware,hardware_hinge
+Please repair the damaged hinge holding my laptop screen,hardware,hardware_hinge
+The headset microphone cable is torn,hardware,hardware_headset
+My headset only plays sound in one ear after the wire broke,hardware,hardware_headset
+I need a replacement headset because the microphone arm snapped,hardware,hardware_headset
+The webcam lens is cracked and the image is blurry,hardware,hardware_webcam
+My external camera has a loose physical USB connector,hardware,hardware_webcam
+Please replace the damaged webcam attached to my monitor,hardware,hardware_webcam
+The hard drive clicks and is no longer detected at startup,hardware,hardware_disk
+The workstation reports a physical disk failure during boot diagnostics,hardware,hardware_disk
+Please replace the failed storage drive in my desktop,hardware,hardware_disk
+My laptop charger has a frayed cable,hardware,hardware_charger
+The power adapter gets extremely hot and stops charging,hardware,hardware_charger
+I need a replacement charger with an intact power connector,hardware,hardware_charger
+The laptop becomes too hot and shuts itself off,hardware,hardware_overheating
+My workstation overheats even when running very few tasks,hardware,hardware_overheating
+Please inspect blocked cooling vents because my notebook keeps overheating,hardware,hardware_overheating
+The memory diagnostic reports a faulty RAM module,hardware,hardware_ram
+My desktop needs a damaged memory stick replaced,hardware,hardware_ram
+Hardware tests found errors in the workstation RAM,hardware,hardware_ram
+The barcode scanner trigger is physically broken,hardware,hardware_scanner
+Our handheld scanner will not illuminate when the trigger is pressed,hardware,hardware_scanner
+Please replace the damaged barcode reader at reception,hardware,hardware_scanner
+I cannot connect to the office VPN from home,network,network_vpn
+The remote VPN tunnel disconnects immediately after connecting,network,network_vpn
+My home connection works but the corporate VPN times out,network,network_vpn
+Office WiFi keeps disconnecting during meetings,network,network_wifi_drop
+My wireless connection drops every few minutes at my desk,network,network_wifi_drop
+The staff WiFi signal vanishes repeatedly on this floor,network,network_wifi_drop
+Internal hostnames fail to resolve on the office connection,network,network_dns
+DNS lookups for our intranet servers time out,network,network_dns
+I can reach a server by IP address but not by its hostname,network,network_dns
+My wired computer is not receiving an IP address,network,network_dhcp
+The Ethernet connection shows a self assigned address,network,network_dhcp
+DHCP does not issue a lease to my workstation,network,network_dhcp
+Large downloads are very slow across the office internet connection,network,network_bandwidth
+Everyone on our floor is experiencing poor internet throughput,network,network_bandwidth
+The office broadband speed has dropped sharply this afternoon,network,network_bandwidth
+Our guest wireless network has no internet access,network,network_guest_wifi
+Visitors can join guest WiFi but cannot reach any websites,network,network_guest_wifi
+The guest wireless portal opens but traffic never leaves the building,network,network_guest_wifi
+The network wall port next to my desk has no link,network,network_wall_port
+An Ethernet cable works at another desk but not in this wall socket,network,network_wall_port
+Please check the inactive network outlet in meeting room two,network,network_wall_port
+The firewall blocks the required outbound connection on port 8443,network,network_firewall
+Our service cannot reach its endpoint because the network firewall denies traffic,network,network_firewall
+Please allow the documented TCP port through the office firewall,network,network_firewall
+Packets to our branch office are being lost,network,network_packet_loss
+The connection between the two offices shows heavy packet loss,network,network_packet_loss
+Pings across the branch link fail intermittently,network,network_packet_loss
+The proxy server refuses connections to an approved website,network,network_proxy
+Web browsing fails when traffic passes through the corporate proxy,network,network_proxy
+The office web proxy returns connection errors for external pages,network,network_proxy
+Devices on the lab VLAN cannot reach the build server,network,network_vlan
+Routing from the test subnet to the server subnet is broken,network,network_vlan
+Please check network isolation rules between the lab and server VLANs,network,network_vlan
+Two computers show a duplicate IP address warning,network,network_ip_conflict
+The workstation loses connectivity because another device has the same IP,network,network_ip_conflict
+Please resolve an IP address collision on our wired network,network,network_ip_conflict
+Video calls have high latency on the office network,network,network_latency
+The connection delay to our regional server has increased,network,network_latency
+Network round trip times are causing long pauses in remote sessions,network,network_latency
+The warehouse wireless access point is unreachable,network,network_access_point
+No device can see the WiFi broadcast near the loading area,network,network_access_point
+Please investigate the offline access point in the warehouse,network,network_access_point
+Our whole office lost internet access after the router restarted,network,network_router
+The gateway no longer forwards traffic outside the local network,network,network_router
+The office router is up but the external network is unreachable,network,network_router
+Remote desktop connections fail across the office network,network,network_rdp_route
+I can sign in locally but the remote desktop port is unreachable,network,network_rdp_route
+Please check routing for remote desktop traffic to the office subnet,network,network_rdp_route
+The spreadsheet application crashes when opening a workbook,software,software_spreadsheet_crash
+My spreadsheet editor closes unexpectedly on startup,software,software_spreadsheet_crash
+Opening an existing workbook causes the spreadsheet program to stop responding,software,software_spreadsheet_crash
+Please install the approved code editor on my workstation,software,software_editor_install
+I need the development editor application added to my laptop,software,software_editor_install
+Can you deploy the standard programming editor package,software,software_editor_install
+The PDF reader renders documents as blank pages,software,software_pdf_render
+PDF files open with missing text in the document viewer,software,software_pdf_render
+My PDF application displays empty pages instead of document contents,software,software_pdf_render
+The email client crashes whenever I open the calendar,software,software_mail_calendar
+Switching to calendar view makes my desktop mail application freeze,software,software_mail_calendar
+My email program stops responding when loading appointments,software,software_mail_calendar
+The browser extension stopped working after an update,software,software_browser_extension
+My approved browser add on fails to load its toolbar,software,software_browser_extension
+Please repair the broken extension in my web browser,software,software_browser_extension
+The operating system update fails with an installation error,software,software_os_update
+My computer repeatedly rolls back the latest system update,software,software_os_update
+The system updater cannot finish installing a pending patch,software,software_os_update
+The design application says its license has expired,software,software_license
+Please renew the software license for our diagram editor,software,software_license
+My installed design tool cannot activate its product license,software,software_license
+The video meeting app closes when I share my screen,software,software_meeting_share
+Screen sharing causes the conferencing application to crash,software,software_meeting_share
+The meeting software freezes when desktop sharing starts,software,software_meeting_share
+The package manager reports conflicting library dependencies,software,software_dependencies
+Installing the development packages fails because dependency versions conflict,software,software_dependencies
+My project cannot start after a library update changed its dependencies,software,software_dependencies
+The printer driver installer fails on my computer,software,software_printer_driver
+Printing works elsewhere but my local printer driver is corrupted,software,software_printer_driver
+Please reinstall the software driver for the office printer,software,software_printer_driver
+The archive utility cannot extract a valid ZIP file,software,software_archive
+My compression program reports an error when unpacking archives,software,software_archive
+Please repair the file extraction application on my desktop,software,software_archive
+The application settings reset every time I close the program,software,software_preferences
+My editor does not save its preferences between sessions,software,software_preferences
+The program forgets my configured options after restarting,software,software_preferences
+The database client displays a startup plugin error,software,software_database_plugin
+My SQL editor cannot load its required application plugin,software,software_database_plugin
+Please repair the missing extension inside the database client,software,software_database_plugin
+I need to uninstall an obsolete project management application,software,software_uninstall
+The old planning tool is still installed and its uninstaller fails,software,software_uninstall
+Please remove the retired project tracking software from my laptop,software,software_uninstall
+The backup application exits before completing a scheduled job,software,software_backup
+My backup client reports an internal application exception,software,software_backup
+The installed backup software crashes during its nightly task,software,software_backup
+The terminal emulator displays unreadable characters with the current font,software,software_terminal_font
+My terminal application renders text incorrectly after a font settings change,software,software_terminal_font
+Please fix the character encoding configuration in my terminal program,software,software_terminal_font

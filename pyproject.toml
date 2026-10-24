@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "it-ticket-classifier"
+version = "0.1.0"
+description = "A small, reproducible IT support ticket classification demo"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = ["scikit-learn>=1.6,<2", "joblib>=1.4,<2"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[project.scripts]
+ticket-classifier = "ticket_classifier.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ticket_classifier"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+extend-exclude = [".cache"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

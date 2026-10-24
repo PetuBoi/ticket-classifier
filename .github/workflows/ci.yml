@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - uses: astral-sh/setup-uv@v10
+        with:
+          version: '0.13.1'
+          enable-cache: false
+      - name: Install locked dependencies
+        run: uv sync --locked
+      - name: Lint
+        run: uv run --locked ruff check .
+      - name: Check formatting
+        run: uv run --locked ruff format --check .
+      - name: Test
+        run: uv run --locked pytest
+      - name: Local CLI smoke test
+        run: |
+          uv run --locked ticket-classifier train --data data/tickets.csv --output artifacts
+          uv run --locked ticket-classifier predict --model artifacts/model.joblib --text "I cannot connect to the office VPN"
+      - name: Build Docker image
+        run: docker build --tag ticket-classifier:ci .
+      - name: Check non-root volume access
+        run: |
+          docker volume create ticket-classifier-ci
+          docker run --rm --mount type=volume,source=ticket-classifier-ci,target=/artifacts --entrypoint sh ticket-classifier:ci -c 'test "$(id -u)" -ne 0 && touch /artifacts/.write-test && rm /artifacts/.write-test'
+      - name: Train in Docker
+        run: >-
+          docker run --rm
+          --mount type=volume,source=ticket-classifier-ci,target=/artifacts
+          ticket-classifier:ci train --data data/tickets.csv --output /artifacts
+      - name: Predict in a new container using the saved model
+        run: >-
+          docker run --rm
+          --mount type=volume,source=ticket-classifier-ci,target=/artifacts,readonly
+          ticket-classifier:ci predict --model /artifacts/model.joblib
+          --text "I cannot connect to the office VPN"
+      - name: Remove CI volume
+        if: always()
+        run: docker volume rm ticket-classifier-ci || true
